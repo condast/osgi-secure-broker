@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipselabs.osgi.ds.broker.feature"
+      label="OSGI Secure Broker Feature"
+      version="1.0.0.v20130305"
+      provider-name="Condast">
+
+   <description url="http://www.example.com/description">
+      This sample project demonstrates the OSGI Secure Broker, which
+uses ther DS framework. There are three attendees, a server,
+a client and a petitioner that all communicate with each other
+(through a thread spawned by the server every ten seconds).
+
+When running the application as an OSGI Framework, four commands
+are addded to the OSGI console:
+- roundhouse: a list of all the available commands
+- attendees: the attendees in the roundhouse
+- matched; attendees that are matched in an assembly
+- waiting: attendees who are waiting to get matched.
+   </description>
+
+   <copyright url="http://www.condast.com">
+      This software is distributed by Condast, and can be freely distributed by others under the conditions of the Eclipse License Agreement.
+
+Copyright 2005-2013 Condast
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      Visit the above website for details
+   </license>
+
+   <url>
+      <update label="OSGI Secure Broker" url="http://www.dzone.com/secure-broker/index.html"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.equinox.ds" version="1.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.osgi"/>
+   </requires>
+
+   <plugin
+         id="org.eclipselabs.osgi.ds.broker"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20120914"/>
+
+   <plugin
+         id="org.eclipselabs.osgi.ds.broker.client"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20130226"/>
+
+   <plugin
+         id="org.eclipselabs.osgi.ds.broker.client.and.provider"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20130226"/>
+
+   <plugin
+         id="org.eclipselabs.osgi.ds.broker.server"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v20130215"/>
+
+</feature>

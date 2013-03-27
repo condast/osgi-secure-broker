@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipselabs.osgi.ds.broker.feature_1.0.0.v20130305.jar" id="org.eclipselabs.osgi.ds.broker.feature" version="1.0.0.v20130305"/>
+</site>
