@@ -15,7 +15,18 @@ public abstract class AbstractPetitioner<T, U, V extends Object> extends
 		palaver.setClaimAttention(false);
 		collection = new ArrayList<V>();
 	}
-		
+
+	protected AbstractPetitioner( String identifier, IPalaver<T> palaver) {
+		super(identifier, palaver);
+		palaver.setClaimAttention(false);
+		collection = new ArrayList<V>();
+	}
+
+	@Override
+	protected void setIdentifier(String identifier) {
+		super.setIdentifier(identifier);
+	}
+
 	/**
 	 * Get the collection
 	 * @return

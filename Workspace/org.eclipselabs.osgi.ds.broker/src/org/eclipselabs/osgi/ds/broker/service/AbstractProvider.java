@@ -25,6 +25,16 @@ public abstract class AbstractProvider<T, U, V extends Object> extends
 		palaver.setClaimAttention( claimAttention );
 	}
 
+	protected AbstractProvider(String identifier, IPalaver<T> palaver, boolean claimAttention ) {
+		super(identifier, palaver);
+		palaver.setClaimAttention( claimAttention );
+	}
+	
+	@Override
+	protected void setIdentifier(String identifier) {
+		super.setIdentifier(identifier);
+	}
+
 	/**
 	 * A provider does not necessarily have to respond to a request. This is only required for a petitioner. 
 	 * That's why this method is empty by default. 

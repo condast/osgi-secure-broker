@@ -17,10 +17,19 @@ public abstract class AbstractAttendee<T,U,V extends Object> implements IAttende
 	private boolean attending;
 	private boolean matched;
 	
-	public AbstractAttendee( IPalaver<T> palaver ) {
+	protected AbstractAttendee( IPalaver<T> palaver ) {
 		this.palavers = new ArrayList<IPalaver<T>>();
 		this.palavers.add(palaver);
 		this.identifier = this.getClass().getName();
+		this.attending = false;
+		this.matched = false;
+		listeners = new ArrayList<IExchangeListener>();
+	}
+
+	protected AbstractAttendee( String identifier, IPalaver<T> palaver ) {
+		this.palavers = new ArrayList<IPalaver<T>>();
+		this.palavers.add(palaver);
+		this.identifier = identifier;
 		this.attending = false;
 		this.matched = false;
 		listeners = new ArrayList<IExchangeListener>();

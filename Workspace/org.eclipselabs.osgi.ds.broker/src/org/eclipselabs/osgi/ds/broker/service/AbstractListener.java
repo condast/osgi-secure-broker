@@ -10,12 +10,19 @@ public abstract class AbstractListener<T, U, V extends Object> extends AbstractA
 
 	private Collection<IParlezListener> listeners;
 	
-	public AbstractListener(IPalaver<T> palaver) {
+	protected AbstractListener(IPalaver<T> palaver) {
 		super(palaver);
 		listeners = new ArrayList<IParlezListener>();
 		palaver.setClaimAttention(false );
 	}
 
+	protected AbstractListener(String identifier, IPalaver<T> palaver) {
+		super(identifier, palaver);
+		listeners = new ArrayList<IParlezListener>();
+		palaver.setClaimAttention(false );
+	}
+
+	
 	public void addParlezListener( IParlezListener listener ){
 		this.listeners.add( listener );
 	}
