@@ -1,0 +1,1 @@
+This piece of software demonstrates the implementation of a secure broker which has a small memory footprint, enforces the whiteboard pattern, and makes the implementation of Ds much easier.
