@@ -2,7 +2,7 @@
 <feature
       id="org.eclipselabs.osgi.ds.broker.feature"
       label="OSGI Secure Broker Feature"
-      version="1.0.0.v20130305"
+      version="1.0.0.v20150525"
       provider-name="Condast">
 
    <description url="http://www.example.com/description">
@@ -43,24 +43,24 @@ Copyright 2005-2013 Condast
          id="org.eclipselabs.osgi.ds.broker"
          download-size="0"
          install-size="0"
-         version="1.0.0.v20120914"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipselabs.osgi.ds.broker.client"
          download-size="0"
          install-size="0"
-         version="1.0.0.v20130226"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipselabs.osgi.ds.broker.client.and.provider"
          download-size="0"
          install-size="0"
-         version="1.0.0.v20130226"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipselabs.osgi.ds.broker.server"
          download-size="0"
          install-size="0"
-         version="1.0.0.v20130215"/>
+         version="0.0.0"/>
 
 </feature>

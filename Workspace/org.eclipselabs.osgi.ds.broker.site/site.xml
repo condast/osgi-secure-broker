@@ -3,5 +3,8 @@
    <description name="OSGI Secure Broker" url="https://code.google.com/a/eclipselabs.org/p/osgi-secure-broker/source/browse/Workspace/org.eclipselabs.osgi.ds.broker.site/site.xml">
       A secure broker implementation based on OSGI Declarative services
    </description>
-   <feature url="features/org.eclipselabs.osgi.ds.broker.feature_1.0.0.v20130305.jar" id="org.eclipselabs.osgi.ds.broker.feature" version="1.0.0.v20130305"/>
+   <feature url="features/org.eclipselabs.osgi.ds.broker.feature_1.0.0.v20150525.jar" id="org.eclipselabs.osgi.ds.broker.feature" version="1.0.0.v20150525">
+      <category name="org.eclipselabs.osgi.ds.broker"/>
+   </feature>
+   <category-def name="org.eclipselabs.osgi.ds.broker" label="OSGI Secure Broker"/>
 </site>
